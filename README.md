@@ -25,5 +25,3 @@ SuitPI is a full-stack SaaS platform designed to automate and streamline tradema
 - **Notifications**: Cronjobs
 
 ---
-
-## 📸 Screenshots / Demo
