@@ -26,7 +26,27 @@ SuitPI is a full-stack SaaS platform designed to automate and streamline tradema
 
 ---
 
+## ⚙️ Setup Notes
+
+This app requires a MySQL database, a `.env` file with various API keys and credentials, and webhook configurations for Stripe. Due to the complexity of local setup and deactivated scraping functionality (due to IMPI's anti-bot protection), the app may not run fully without additional configuration.
+
+For security reasons, this is a cleaned version of the original private repo. The scraping code, Stripe billing, and reporting logic are all present, but may require adjustments to run locally.
+
+---
+
 ## ⚠️ Known Limitations
 
 - Web scraping from IMPI is currently disabled due to stricter anti-bot systems.
 - The application is otherwise fully functional, including the dashboard, database, Stripe billing, and reports.
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+- Pablo Humberto de la Garza Vargas (@pvd88)
