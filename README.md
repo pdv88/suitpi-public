@@ -25,3 +25,8 @@ SuitPI is a full-stack SaaS platform designed to automate and streamline tradema
 - **Notifications**: Cronjobs
 
 ---
+
+## ⚠️ Known Limitations
+
+- Web scraping from IMPI is currently disabled due to stricter anti-bot systems.
+- The application is otherwise fully functional, including the dashboard, database, Stripe billing, and reports.
