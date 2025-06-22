@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  box-sizing: border-box;
+  color: #bec3c3;
+  background-color: #1c2326;
+  overflow-y: auto;
+}
+main {
+  display: flex;
+  height: 100dvh;
+  overflow-y: auto;
+  margin: auto;
+}
+#root {
+  min-height: 100dvh;
+  overflow-y: auto;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 3px 3px 10px #040505, -3px -3px 10px #46555d;
+  color: #bec3c3;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 3px 3px 10px #040505, -3px -3px 10px #46555d;
+}
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+select {
+  border-radius: 40px;
+  border: 1px solid transparent;
+  background: linear-gradient(145deg, #1e2529, #192022);
+  box-shadow: 3px 3px 10px #121719, -3px -3px 10px #262f33;
+}
+select:focus {
+  border: 1px solid grey;
+}
+
+select option {
+  background: #1c2326;
+  color: #fff;
+}
+a {
+  background: #1c2326;
+  transition: all 0.3s;
+}
+a:hover {
+  background: linear-gradient(145deg, #2c373b, #192022);
+  box-shadow: 3px 3px 10px #121719, -3px -3px 10px #262f33;
+  transition: all 0.3s;
+}
+a:active {
+  box-shadow: inset 5px 5px 10px #121719, inset -5px -5px 10px #262f33;
+  transition: all 0.3s;
+}
+.active{
+  background: linear-gradient(145deg, #2c373b, #192022);
+  box-shadow: inset 5px 5px 10px #121719, inset -5px -5px 10px #262f33;
+  transition: all 0.3s;
+}
+.active:hover{
+  background: linear-gradient(145deg, #2c373b, #192022);
+  box-shadow: inset 5px 5px 10px #121719, inset -5px -5px 10px #262f33;
+  transition: all 0.3s;
+  cursor: default;
+}
+input,
+textarea {
+  background: #1c2326;
+  box-shadow: inset 5px 5px 15px #121719, inset -5px -5px 15px #262f33;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid #686868;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: #d3d8d9;
+  -webkit-box-shadow: inset 5px 5px 10px #121719, inset -5px -5px 10px #262f33,
+    0 0 0 500px #1c2326 inset;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;  
+  -webkit-box-shadow: inset 5px 5px 10px #121719, inset -5px -5px 10px #262f33,
+    0 0 0 10px #1c2326 inset;
+  position: relative;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "✔";
+}
+.progress-bg {
+  background: #1c2326;
+  box-shadow: inset 5px 5px 15px #121719, inset -5px -5px 15px #262f33;
+  border-radius: 1rem;
+}
+.progress-bar {
+  background: linear-gradient(145deg, #94b5c4, #598ca4);
+  border-radius: 1rem;
+}
+.btn-primary {
+  background: linear-gradient(145deg, #94b5c4, #598ca4);
+  margin: 1rem 0;
+  color: #1c2326;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  box-shadow: 5px 5px 10px #0c0f10, -5px -5px 10px #313d42;
+  transition: all 0.3s ease;
+}
+.btn-primary:active {
+  background: linear-gradient(145deg, #657f8b, #9ac3d5);
+  transition: all 0.3s ease;
+}
+.btn-primary:disabled{
+  background: linear-gradient(145deg, #9ac3d5, #657f8b);
+  opacity: 0.5;
+  color: #1c2326;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-cancel{
+  background: linear-gradient(145deg, #d95f5f, #6f2f2f);
+  transition: all 0.3s ease;
+}
+.btn-cancel:hover{
+  box-shadow: 5px 5px 10px #0c0f10, -5px -5px 10px #313d42;
+  transition: all 0.3s ease;
+}
+.btn-cancel:active{
+  background: linear-gradient(145deg, #6f2f2f, #d95f5f);
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar {
+  width: 0.7rem;
+  border-radius: 1rem;
+  background-color: #1d1d1d00;
+  border: 1px solid #74747476;
+}
+
+#sidemenu {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
+  border-radius: 1rem;
+  box-shadow: inset 0px 0px 5px #0f0f0f;
+}
+.bg-aside {
+  background: #1c2326;
+  border: 1px solid #313d416f ;
+  box-shadow: 10px 10px 30px #0f1314, -10px -10px 30px #313d42;
+}
+.bg-logo {
+  transition: all 0.3s;
+}
+.bg-logo:hover {
+  box-shadow: 3px 3px 10px #030404, -3px -3px 10px #495a62;
+  transition: all 0.3s;
+  color: #d3d8d93b;
+}
+.bg-logo:active {
+  transition: all 0.3s;
+}
+.bg-list-header {
+  border-radius: 40px;
+  background: linear-gradient(145deg, #2a3439, #171c1f);
+  box-shadow: 3px 3px 10px #0f1314, -3px -3px 10px #344046;
+}
+.bg-list {
+  background: #1c232672;
+  border: 1px solid #313d416f ;
+  box-shadow: 3px 3px 9px #0f1314, -3px -3px 9px #313d41;
+}
+.bg-list-details {
+  background: #1c232672;
+  box-shadow: inset 5px 5px 15px #121719, inset -5px -5px 15px #262f33;
+}
+
+.bg-feature {
+  box-shadow: 3px 3px 10px #0f1314, -3px -3px 10px #242c30;
+}
+.bg-login {
+  background: #1c2326;
+  box-shadow: 10px 10px 30px #121719, -10px -10px 30px #262f33;
+}
+.bg-header {
+  border-radius: 0 0 2rem 2rem;
+  background: #1c2326;
+  box-shadow: 10px 10px 30px #0f1314, -10px -10px 30px #313d42;
+}
+.gradient-text {
+  background: -webkit-linear-gradient(945deg, #8eb4c4, #3e5864, #8eb4c4);
+  background-clip: text;
+  color: transparent;
+}
+.bg-card {
+  background: linear-gradient(145deg, #15191b70, #2f3a406e);
+  border: 1px solid #313d416f ;
+  box-shadow: 10px 10px 20px #0f1314, -10px -10px 20px #252e31;
+}
+.bg-card-title {
+  /* background: linear-gradient(145deg, #2a3439, #171c1f); */
+  box-shadow: inset 5px 5px 15px #242c30, inset -5px -5px 15px #0f1314;
+}
+.bg-burger {
+  background: #1c2326;
+  box-shadow: 10px 10px 10px #0f1314;
+}
+.bg-badge {
+  background: linear-gradient(145deg, #d95f5f, #6f2f2f);
+  box-shadow: 3px 3px 9px #0f1314, -3px -3px 9px #313d41;
+}
+.bg-active-tab{
+  background: linear-gradient(145deg, #2a3439, #171c1f);
+  box-shadow: 3px 3px 9px #0f1314, -3px -3px 9px #313d41;
+  transition: all 0.3s ease;
+}
+.bg-inactive-tab{
+  transition: all 0.3s ease;
+}
+.bg-inactive-tab:hover{
+  box-shadow: 3px 3px 9px #0f1314, -3px -3px 9px #313d41;
+  transition: all 0.3s ease;
+}
+.bg-notifications, .bg-modal {
+  background: linear-gradient(145deg, #15191b, #2f3a40);
+  border: 1px solid #313d416f ;
+  box-shadow: 10px 10px 20px #0f1314, -10px -10px 20px #252e31;
+}
+
+.datepicker-custom-input {
+  @apply bg-black text-white;
+}
+
+@media (width < 512px) {
+  ::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  ::-webkit-scrollbar-track {
+    width: 0.3rem;
+  }
+}
+

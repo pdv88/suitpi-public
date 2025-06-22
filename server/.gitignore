@@ -1,0 +1,9 @@
+/node_modules
+.env
+gaceta.xml
+gaceta2.xml
+amppi_data.csv
+amppi_data.json
+amppiScrapper.js
+CorreoPresentacion.js
+presentacion_suitpi.html
