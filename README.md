@@ -79,9 +79,9 @@ STRIPE_WEBHOOK_SECRET
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is shared publicly for portfolio purposes only.  
+All rights are reserved — reuse, redistribution, or modification of the code is not permitted without written permission.
 
----
 
 ## 👤 Author
 
